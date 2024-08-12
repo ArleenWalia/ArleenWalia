@@ -2,9 +2,13 @@
 import random
 #import time
 import time
+# class color
+class color:
+        BOLD = '\033[1m'
+        END = '\033[0m'
 
 # Introduction
-print("Welcome to Island Mystery!")
+print(color.BOLD + "Welcome to Island Mystery!" + color.END)
 player_name = input("Please enter your player name: ")
 
 # Attend the party
@@ -17,9 +21,11 @@ if answer == "n":
         answer1 = input("\nDo you: \n(a)Run inside \n(b)Stay outside")
         if answer1 == "a":
             print("Someone knocks on your door and shoots you.\nTHE END.")
+            time.sleep(5)
             exit()
         else:
             print("You get shot.\n THE END.")
+            time.sleep(5)
             exit()
 else:
     print("\nYou head to the meet up destination and see your friends there.")
@@ -59,19 +65,20 @@ else:
     answer2 = input("Do you say: 'Should we check it out?' (y/n): ")
     if answer2 == "y":
         print("\nYou get up and go into the hall and see the butler coming.")
-        time.sleep(1)
+        time.sleep(2)
         print(f"{player_name}: What’s going on? Why did the maid rush out?”")
-        time.sleep(1)
+        time.sleep(2)
         print("The maid is coming up behind the butler with a tray of water.")
-        time.sleep(1)
+        time.sleep(2)
         print("Butler:I just needed her to get the water for everyone. I had a phone call that I had to attend.")
-        time.sleep(1)
+        time.sleep(2)
         print("You walk back to the living room with the butler and the maid. The maid gives everyone water.")
-        time.sleep(1)
+        time.sleep(2)
         answer3 = input("Do you drink the water (y/n): ")
         if answer3 == "y":
             print("\nYou began choking and die from poison.")
             print("THE END.")
+            time.sleep(5)
             exit()
         else:
             print("\nYou don’t drink water")
@@ -130,6 +137,7 @@ else:
         answer6 = input("Do you: \n(a)Check if the Butler is dead \n(b)Assume he is dead and go inside")
         if answer6 == "b":
             print("You open the door and get shot in the head before seeing who killed you. \nTHE END.")
+            time.sleep(5)
             exit()
         else:
             print("You hand the umbrella over to Pearl and slide down to the Butler’s body.")
@@ -149,6 +157,7 @@ else:
             print("The killer came up behind you and smashed you in the head with a rock.")
             time.sleep(1)
             print("THE END.")
+            time.sleep(5)
             exit()
         if options == "b":
             print("Correct answer!")
@@ -168,6 +177,7 @@ else:
                 print("She shoots Pearl in the head and quickly shoots you before you can pick up the gun.")
                 time.sleep(1)
                 print("THE END.")
+                time.sleep(5)
                 exit()
             else:
                 print("You pull the trigger of the gun and shoot Kelly.")
@@ -175,6 +185,7 @@ else:
                 print("You and Pearl survived!")
                 time.sleep(1)
                 print("Congradulations, you won the game!")
+                time.sleep(5)
                 exit()
         if options == "c":
             print("Incorrect answer.")
@@ -182,6 +193,7 @@ else:
             print("The killer came up behind you and stabbed you in the head.")
             time.sleep(1)
             print("THE END.")
+            time.sleep(5)
             exit()
         if options == "d":
             print("Incorrect answer.")
@@ -189,6 +201,7 @@ else:
             print("The killer came up behind you and shot you in the head.")
             time.sleep(1)
             print("THE END.")
+            time.sleep(5)
             exit()
         if options == "e":
             print("Incorrect answer.")
@@ -196,6 +209,7 @@ else:
             print("The killer knocked you out and buried you alive.")
             time.sleep(1)
             print("THE END.")
+            time.sleep(5)
             exit()
 
 
@@ -210,6 +224,7 @@ else:
                 print("You have no weapon and follow the trail. \nYou open the door and Kelly has a gun to Pearl’s head. \nKelly smirk’s, and shoots both of you.")
                 time.sleep(2)
                 print("THE END.")
+                time.sleep(5)
                 exit()
 
 
@@ -232,6 +247,7 @@ else:
                         print("She shoots Pearl in the head and quickly shoots you before you can pick up the gun.")
                         time.sleep(2)
                         print("THE END.")
+                        time.sleep(5)
                         exit()
                     else:
                         print("You pull the trigger of the gun and shoot Kelly.")
@@ -239,13 +255,14 @@ else:
                         print("You and Pearl survive!")
                         time.sleep(2)
                         print("Congradulations, you won the game!")
+                        time.sleep(5)
                         exit()
                 else:
                     print(f"{player_name} chose knife.")
                     time.sleep(1)
                     print("\nYou follow the trail and open the door. \n Kelly has a gun to Pearl's head as she sobs in fear.")
                     time.sleep(1)
-                    print("Kelly: Drop you knifr or I'll shoot her.")
+                    print("Kelly: Drop you knife or I'll shoot her.")
                     time.sleep(1)
                     answer11 = input("\nDo you: \n(a)Drop the knife \n(b)Throw the knife at Kelly")
                     if answer11 == "a":
@@ -256,6 +273,7 @@ else:
                         print("She shoots Pearl in the head and quickly shoots you before you can pick up the knife.")
                         time.sleep(2)
                         print("THE END.")
+                        time.sleep(5)
                         exit()
                     else:
                         print("You throw the knife at Kelly, but your aim sucks.")
@@ -263,6 +281,7 @@ else:
                         print("She shoots you both")
                         time.sleep(2)
                         print("THE END.")
+                        time.sleep(5)
                         exit()
         else:
             print("You look around the island but find nothing.")
@@ -272,6 +291,7 @@ else:
                 print("You try to swim away but drown because you don't even know how to swim.")
                 time.sleep(1)
                 print("THE END.")
+                time.sleep(5)
                 exit()
             else:
                 print("You run inside and see a trail of pearl beads leading to Kelly's bedroom.")
@@ -283,6 +303,7 @@ else:
                     print("Kelly smirks and shoots you both.")
                     time.sleep(2)
                     print("THE END.")
+                    time.sleep(5)
                     exit()
                 else:
                     weapon1 = input("\nThere are two weapons: \n(a)Gun \n(b)Knife")
@@ -302,6 +323,7 @@ else:
                             print("She shoots Pearl in the head and quickly shoots you before you can pick up the gun.")
                             time.sleep(2)
                             print("THE END.")
+                            time.sleep(5)
                             exit()
                         else:
                             print("You pull the trigger of the gun and shoot Kelly.")
@@ -309,6 +331,7 @@ else:
                             print("You and Pearl survived!")
                             time.sleep(2)
                             print("Congradulations, you won the game!")
+                            time.sleep(5)
                             exit()
                     else:
                         print(f"{player_name} chose knife.")
@@ -326,6 +349,7 @@ else:
                         print("She shoots Pearl in the head and quickly shoots you before you can pick up the knife.")
                         time.sleep(2)
                         print("THE END.")
+                        time.sleep(5)
                         exit()
                     else:
                         print("You throw the knife at Kelly, but your aim sucks.")
@@ -333,4 +357,5 @@ else:
                         print("She shoots you both")
                         time.sleep(2)
                         print("THE END.")
+                        time.sleep(5)
                         exit()
