@@ -69,7 +69,7 @@ else:
         print("You walk back to the living room with the butler and the maid. The maid gives everyone water.")
         time.sleep(1)
         answer3 = input("Do you drink the water (y/n): ")
-        if answer3 == "n":
+        if answer3 == "y":
             print("\nYou began choking and die from poison.")
             print("THE END.")
             exit()
@@ -80,20 +80,20 @@ else:
     # The first death.
     print("\nButler:I have some news for everyone. Mr. and Mrs. Reed are unable to make it because a storm has rolled in.")
     time.sleep(1)
-    print("Kelly & Pearl:WHAT!")
+    print("Kelly & Pearl: WHAT!")
     time.sleep(1)
-    print("Butler:They said to make yourself feel at home.")
+    print("Butler: They said to make yourself feel at home.")
     time.sleep(1)
     print("Suddenly Andrew starts choking and falls to the ground. White foam spurted out of his mouth. Kelly, Pearl, & the maid all scream. Kelly faints.")
     answer4 = input("Do you tell everyone 'Don’t drink the water.' (y/n): ")
     if answer4 == "y":
         print("Everyone stays away from the glasses. Pearl and the maid tend to Kelly.")
         time.sleep(1)
-        print("Pearl:Who did this!")
+        print("Pearl: Who did this!")
         time.sleep(1)
         print("Everyone looks at the maid.")
         time.sleep(1)
-        print("Maid: I didn't do anything! I just got the water - 2 glasses were already filled so I used the tap to fill the ohter 2 glasses! \nI didn't know 1 had poison!")
+        print("Maid: I didn't do anything! I just got the water - 2 glasses were already filled so I used the tap to fill the other 2 glasses! \nI didn't know 1 had poison!")
         time.sleep(1)
         print("The maid and Pearl try to carry Kelly to one of the bedrooms. The butler comes in to help.")
         time.sleep(1)
